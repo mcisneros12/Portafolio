@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6f3ff; /* Un tono de azul claro para el fondo */
+    font-family: "Raleway", sans-serif;
+    color: #333;
+}
+
+.menu__header {
+    background: #0b438d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap
+}
+
+.menu__header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu__header img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu__list__item, .menu__list__contacto {
+    display: none;
+}
+
+.title__network {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+.title__network__item a {
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title__profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #000205;
+}
+
+.about {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Centra los elementos dentro de la sección .about */
+    max-width: 800px; /* Establece un ancho máximo para la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+}
+
+.about__title {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills, .hobbies {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills__title, .hobbies__title  {
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*aplicando grid css*/
+.skills__line, .hobbies__line {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.academic__title {
+    text-align: center;
+    padding: 20px;  |
+}
+
+.skills__box, .hobbies__box {
+    background-color: white;
+    text-align: center;
+    padding: 10px; 
+}
+
+.skills__box img,
+.hobbies__box img,
+.academic__courses__box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.academic__courses__box {
+    background: #ffffff; /* Blanco para los cuadros */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+
+.skills__name {
+    align-self:  center;
+}
+
+/*formacion */
+.academic {
+    padding: 30px;<
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.experience__section__title  {
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu__title {
+    font-size: 25px;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu__list__item a,
+.menu__list__email a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu__list__item a:hover,
+.menu__list__email a:hover {
+    color: #4d90fe; /* Un tono de azul más claro para el hover */
+}
+
+.title {
+    text-align: left;
+    padding: 2rem 1rem;
+    background-color: #e6f3ff; /* Azul claro para el título */
+}
+
+.title__profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%; /* Hacer la imagen redonda */
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+
+.title__bio {
+    font-size: 1.75rem;
+    text-align: justify;
+    padding: 10px;
+    color: #1e3656; /* Azul oscuro para el texto */
+}
+
+.title__network__item a {
+    color: #020c19; /* Azul oscuro para los enlaces */
+    text-decoration: none;
+}
+
+.title__network{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.about,
+.skills,
+.hobbies,
+.academic,
+.experience,
+.formcontato {
+    padding: 10px
+}
+
+.about h3,
+.skills__title,
+.hobbies__title,
+.academic__title,
+.experience__section__title,
+.formcontato__title {
+    color: #1e3656; /* Azul oscuro para los títulos */
+    margin-bottom: 1rem;
+}
+
+.about p,
+.skills__line,
+.hobbies__line,
+.academic__courses,
+.experience__box,
+.formcontato__contacto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills__line,
+.hobbies__line,
+.academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills__box,
+.hobbies__box,
+.academic__courses__box {
+    background: #ffffff; /* Blanco para los cuadros */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+
+.skills__box img,
+.hobbies__box img,
+.academic__courses__box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.skills__name,
+.hobbies__box h4,
+.academic__courses__box h4 {
+    font-size: 1.25rem;
+    color: #1e3656; /* Azul oscuro para los nombres */
+}
+
+.experience__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.experience__description {
+    max-width: 600px;
+}
+
+.experience__title {
+    font-size: 1.5rem;
+    color: #1e3656; /* Azul oscuro para los títulos de experiencia*/
+    margin-bottom: 0.5rem;
+}
+
+.experience__text {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.experience__img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.button a {
+    background-color: #4d90fe; /* Un tono de azul para los botones */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button a:hover {
+    background-color: #357ae8; /* Un tono más oscuro de azul para el hover */
+}
+
+.formcontato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.formcontato__img {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.formcontato__subtext {
+    margin-bottom: 1rem;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formcontato__button {
+    padding: 0.75rem;
+    border: none;
+    background-color: #4d90fe; /* Un tono de azul para el botón*/
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formcontato__button:hover {
+    background-color: #357ae8; /* Un tono más oscuro de azul para el hover */
+}
+
+.formcontato__img{
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e3656; /* Azul oscuro para el pie de página */
+    color: white;
+}
